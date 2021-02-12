@@ -7,3 +7,7 @@ restar = numeroA - numeroB
 print(f"la resta dio {restar} exitosamente")
 multiplicar = numeroA * numeroB
 print (f"la multiplicar dio {multiplicar} exitosamente")
+dividir = numeroA / numeroB
+print (f"la dividir dio {dividir} exitosamente")
+exponente = numeroA**numeroB
+print (f"la exponente dio {exponente} exitosamente")

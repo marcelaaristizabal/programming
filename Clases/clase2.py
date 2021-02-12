@@ -6,7 +6,7 @@ print (pruebaF)
 print (pruebaV)
 pruebaV = pruebaF
 print (pruebaV)
-edad = 18
+edad = 18 
 estatura = 1.78 
 peso = 75 
 NOMBRE = "Marcela Aristizabal Julio"
