@@ -1,18 +1,14 @@
-# Estos son booleans que son variables que solo valen
-# Verdadero o Falso
-pruebaV = True
-pruebaF = False
-print (pruebaF)
-print (pruebaV)
-pruebaV = pruebaF
-print (pruebaV)
 # Definir dos numeros cualquiera para aplicar
-# diferentes booleans,preguntas y operaciones 
+# diferentes preguntas y operaciones 
 numeroA = 45
 numeroB = 67
 # preguntar si el numero A es mayor al numero B 
 print ("#"*14, "¿ Es el numero A mayor al numero B ?", "#"*14)
 isMayor = numeroA > numeroB
+print (isMayor)
+# preguntar el numero A es menor al numero B
+print ("#"*14, "¿ Es el numero A menor al numero B ?", "#"*14)
+isMenor = numeroA < numeroB
 print (isMayor)
 # preguntar si los numeros A y B son diferentes
 print ("#"*14, "¿ Son los numeros A y B diferentes ?", "#"*14)
