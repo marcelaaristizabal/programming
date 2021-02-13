@@ -9,7 +9,7 @@ print (isMayor)
 # preguntar el numero A es menor al numero B
 print ("#"*14, "¿ Es el numero A menor al numero B ?", "#"*14)
 isMenor = numeroA < numeroB
-print (isMayor)
+print (isMenor)
 # preguntar si los numeros A y B son diferentes
 print ("#"*14, "¿ Son los numeros A y B diferentes ?", "#"*14)
 isNumerosDiferentes = numeroA != numeroB
