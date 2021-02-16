@@ -11,4 +11,3 @@ print (MENSAJE_SALUDO, nombre)
 edad = int ( input (PREGUNTA_EDAD))
 estatura = float (input (PREGUNTA_ESTATURA))
 
-
