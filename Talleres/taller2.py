@@ -33,16 +33,16 @@ print (f"El resultado de si A y B son iguales es ...", isNumerosIguales)
 #----Operaciones matemáticas con los datos ingresados por el usuario----#
 # Sumando los dos valores ingresados
 sumar = numeroA + numeroB
-print(f"La suma de los datos ingresados dio {sumar} exitosamente")
+print (f"El resultado de la suma de los datos ingresados es ...", sumar)
 # Restando los dos valores ingresados
 restar = numeroA - numeroB
-print(f"La resta de los datos ingresados dio {restar} exitosamente")
+print (f"El resultado de la resta de los datos ingresados es ...", restar)
 # Multiplicando los dos valores ingresados
 multiplicar = numeroA * numeroB
-print (f"La multiplicación de los datos ingresados dio {multiplicar} exitosamente")
+print (f"El resultado de la multiplicación de los datos ingresados es ...", multiplicar)
 # Dividiendo los dos valores ingresados
 dividir = numeroA / numeroB
-print (f"La división de los datos ingresados dio {dividir} exitosamente")
+print (f"El resultado de la división de los datos ingresados es ...", dividir)
 # Potenciación con los dos valores ingresados
 potenciacion = numeroA**numeroB
-print (f"La potenciación con los datos ingresados dio {potenciacion} exitosamente")
+print (f"El resultado de la potenciación con los datos ingresados es ...", potenciacion)
