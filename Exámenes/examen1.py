@@ -40,8 +40,8 @@ print (resultado)
 homocisteina = float (input (PREGUNTA_HOMOCISTEINA))
 IsOptimoHomocisteina = homocisteina >= 2 and homocisteina < 15
 IsSobreLimiteOptimo_HMC = homocisteina >= 15 and homocisteina < 30
-IsAlto_HMC = homocisteina >= 30 and homocisteina < 101
-IsMuyAlto_HMC = homocisteina > 100
+IsAlto_HMC = homocisteina >= 30 and homocisteina < 100
+IsMuyAlto_HMC = homocisteina >= 100
 resultado = ""
 
 #----Condicionales HOMOCISTEÍNA----#
