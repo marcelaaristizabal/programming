@@ -6,7 +6,7 @@ MENSAJE_DESPEDIDA = "Tu IMC es ..."
 MENSAJE_BAJO_PESO = "Estás pero delgado!!"
 MENSAJE_NORMAL = "Estás en forma "
 MENSAJE_SOBRE_PESO = "Ten cuidado,estás en sobre peso "
-MENSAJE_OBESO = "Cuidado,estás obeso. Tu salus corre riesgo"
+MENSAJE_OBESO = "Cuidado,estás obeso. Tu salud corre riesgo"
 #----Entrada código----#
 print (MENSAJE_BIENVENIDA)
 peso = float (input(PREGUNTA_PESO))
