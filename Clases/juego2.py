@@ -44,7 +44,6 @@ else :
 numeroIngresado = int (input (PREGUNTAR_NUMERO))
 while (numeroIngresado != numeroOculto and vidas > 1 ) :
     vidas -=1
-    print (vidas)
     print (f'Te quedan {vidas} vidas')
     numeroIngresado = int(input(PREGUNTA_FALLIDA))
 
