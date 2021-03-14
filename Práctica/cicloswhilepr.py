@@ -1,6 +1,6 @@
 PREGUNTA_NOMBRE = "Ingresa tu nombre.Por favor : "
 nombre = input (PREGUNTA_NOMBRE)
-print(f"Hola {nombre}.Te saludo. Espero que estés muy bien")
+print(f"Hola {nombre}.Espero que estés muy bien")
 PREGUNTA_DEACUERDO = '''
         Si - ¿Te vuelvo a saludar?
         No - Me despido 
@@ -28,11 +28,11 @@ print(MENSAJE_GANASTE)
 
 #----Ejercicios While----#
 #Leer números enteros de teclado, hasta que el usuario ingrese 0. Finalmente,mostrar la sumatoria de todos los número ingresados.
-numero_oculto2 = 0
 #----Mensajes----#
 MENSAJE_SALUDO2= 'Hola. Es un placer interactuar contigo,espero que te encuentres bien'
 MENSAJE_DESPEDIDA2 = 'Hasta luego. Ten un bonito día'
 MENSAJE_FALLASTE2 = '¡Ups! Ese no era el número. Sigue intentando...'
+numero_oculto2 = 0
 MENSAJE_GANASTE2 = f'¡Muy bien! El número {numero_oculto2} era el correcto.'
 
 #----Entrada al código----#
@@ -44,3 +44,34 @@ while (numero_escogido2 != numero_oculto2):
     print(MENSAJE_FALLASTE2)
     numero_escogido2= int (input(PREGUNTA_NUMERO2))
 print(MENSAJE_GANASTE2) 
+
+#Escriba dos números enteros.El segundo debe ser mayor que el primero.
+#----Mensajes----#
+MENSAJE_SALUDO = 'Hola.Es un placer interactuar contigo'
+MENSAJE_DESPEDIDA = 'Que tengas un feliz día'
+MENSAJE_ERROR = 'El número que ingresaste no es válido.Inténtelo de nuevo'
+
+#----Entradas al código----#
+PREGUNTA_NUMERO_A ='Ingrese un número entero A, por favor: ' 
+PREGUNTA_NUMERO_B ='Ingrese un número entero B, por favor: '
+numeroA = int(input(PREGUNTA_NUMERO_A))
+numeroB = int(input(PREGUNTA_NUMERO_B))
+while (numeroB <= numeroA) :
+    print (MENSAJE_ERROR)
+    numeroB = int(input(PREGUNTA_NUMERO_B))
+print ('Los números que ingresaste fueron:',numeroA, 'y',numeroB,MENSAJE_DESPEDIDA)
+
+#Escribir un número entero, siempre y cuando uno sea mayor que el anterior
+#----Saludos----#
+MENSAJE_BIENVENIDA: 'Hola.Espero que te encuentres bien,es un placer interactuar contigo. Vas a ingresar números enteros cualquieras,pero solo te mostraré estos,si los ingresas uno mayor al anterior.'
+MENSAJE_ADVERTENCIA :'¡UPS! El número ingresado no es válido. Intenta nuevamente...'
+MENSAJE_DESPEDIDA = 'Muchas gracias por tu participación. Ten un bonito día.'
+#----Entrada al código----#
+print (MENSAJE_BIENVENIDA)
+PREGUNTA_NUMERO = 'Ingresa un número entero,por favor : '
+numero_ingresado = int(input(PREGUNTA_NUMERO))
+numero_permitido = numero_permitido > numero_ingresado 
+while (numero_permitido <= numero_ingresado):
+    print (MENSAJE_ADVERTENCIA)
+    numero_ingresado = int(input(PREGUNTA_NUMERO))
+print(MENSAJE_DESPEDIDA)
