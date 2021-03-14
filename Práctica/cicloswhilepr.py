@@ -50,7 +50,7 @@ print(MENSAJE_GANASTE2)
 MENSAJE_SALUDO = 'Hola.Es un placer interactuar contigo'
 MENSAJE_DESPEDIDA = 'Que tengas un feliz día'
 MENSAJE_ERROR = 'El número que ingresaste no es válido.Inténtelo de nuevo'
-print (MENSAJE_BIENVENIDA)
+print (MENSAJE_SALUDO)
 
 #----Entradas al código----#
 PREGUNTA_NUMERO_A ='Ingrese un número entero A, por favor: ' 
