@@ -9,11 +9,11 @@ print(nombres)
 print (nombres[2])
 edades = [18,19,20,17,32,14,12,13,15,16]
 estaturas = [1.62,1.80,1.67,1.98]
-#Al último 
+#Mostrar al último 
 print(edades[-2])
 print (edades[0:2])
 print (edades [:3])
-print (edades [:2])
+print (edades [2:])
 print(edades [:])
 print (edades)
 edades.sort()
