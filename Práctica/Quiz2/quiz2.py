@@ -20,7 +20,7 @@ MENSAJE_EURO ='Mostrando lista en euros'
 MENSAJE_MAYOR ='El mayor número ingresado es ---> '
 MENSAJE_MENOR ='El menor número ingresado es ---> '
 MENSAJE_PROMEDIO ='El promedio es --->'
-MENSAJE_DESPEDIDA = 'Que tengas uneliz día'
+MENSAJE_DESPEDIDA = 'Que tengas un feliz día'
 #----Error----#
 MENSAJE_ERROR = 'INGRESO NO VÁLIDO'
 
