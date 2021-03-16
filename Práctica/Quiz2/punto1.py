@@ -1,3 +1,6 @@
+
+
+
 listaDolares = [20000,30000,4000,2500,1000,7600]
 
 #Conversión punto 1
