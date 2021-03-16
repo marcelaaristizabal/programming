@@ -32,17 +32,18 @@ print(MENSAJE_GANASTE)
 MENSAJE_SALUDO2= 'Hola. Es un placer interactuar contigo,espero que te encuentres bien'
 MENSAJE_DESPEDIDA2 = 'Hasta luego. Ten un bonito día'
 MENSAJE_FALLASTE2 = '¡Ups! Ese no era el número. Sigue intentando...'
-numero_oculto2 = 0
-MENSAJE_GANASTE2 = f'¡Muy bien! El número {numero_oculto2} era el correcto.'
+sumatoria = 0
+MENSAJE_GANASTE2 = f'¡Muy bien! El número {sumatoria} era el correcto.'
 
 #----Entrada al código----#
 print(MENSAJE_SALUDO2)
-PREGUNTA_NUMERO2 = 'Ingresa un número entero de una cifra. Por favor : '
+PREGUNTA_NUMERO2 = 'Ingresa un número entero de una cifra o 0 para terminar. Por favor : '
 numero_escogido2 = int(input(PREGUNTA_NUMERO2))
-
-while (numero_escogido2 != numero_oculto2):
+while (numero_escogido2 != 0):
+    sumatoria += numero_escogido2
     print(MENSAJE_FALLASTE2)
     numero_escogido2= int (input(PREGUNTA_NUMERO2))
+print (sumatoria)
 print(MENSAJE_GANASTE2) 
 
 #Escriba dos números enteros.El segundo debe ser mayor que el primero.
@@ -54,7 +55,7 @@ print (MENSAJE_SALUDO)
 
 #----Entradas al código----#
 PREGUNTA_NUMERO_A ='Ingrese un número entero A, por favor: ' 
-PREGUNTA_NUMERO_B ='Ingrese un número entero B, por favor: '
+PREGUNTA_NUMERO_B ='Ingrese un número entero B mayor al número A, por favor: '
 numeroA = int(input(PREGUNTA_NUMERO_A))
 numeroB = int(input(PREGUNTA_NUMERO_B))
 while (numeroB <= numeroA) :
@@ -64,15 +65,41 @@ print ('Los números que ingresaste fueron:',numeroA, 'y',numeroB,MENSAJE_DESPED
 
 #Escribir un número entero, siempre y cuando uno sea mayor que el anterior
 #----Saludos----#
-MENSAJE_BIENVENIDA3: 'Hola.Espero que te encuentres bien,es un placer interactuar contigo. Vas a ingresar números enteros cualquieras,pero solo te mostraré estos,si los ingresas uno mayor al anterior.'
-MENSAJE_ADVERTENCIA :'¡UPS! El número ingresado no es válido. Intenta nuevamente...'
+MENSAJE_ENTRADA = 'Hola.Espero que te encuentres bien,es un placer interactuar contigo. Vas a ingresar números enteros cualquieras,pero solo te mostraré estos,si los ingresas uno mayor al anterior.'
 MENSAJE_DESPEDIDA3 = 'Muchas gracias por tu participación. Ten un bonito día.'
-print (MENSAJE_BIENVENIDA3)
+print (MENSAJE_ENTRADA)
 #----Entrada al código----#
-PREGUNTA_NUMERO = 'Ingresa un número entero,por favor : '
-numero_ingresado = int(input(PREGUNTA_NUMERO))
-numero_permitido = numero_permitido > numero_ingresado 
-while (numero_permitido <= numero_ingresado):
+PREGUNTA_NUMERO1= 'Ingresa un número entero,por favor : '
+PREGUNTA_NUMERO2= 'Ingresa un número entero mayor al número anterior,por favor : '
+numero_ingresado1 = int(input(PREGUNTA_NUMERO1))
+numero_ingresado2 = int(input(PREGUNTA_NUMERO2))
+MENSAJE_ADVERTENCIA =f'¡UPS! El número ingresado no es válido.El número debe ser mayor a {numero_ingresado1} Intenta nuevamente...'
+
+while (numero_ingresado2 <= numero_ingresado1):
     print (MENSAJE_ADVERTENCIA)
-    numero_ingresado = int(input(PREGUNTA_NUMERO))
+    numero_ingresado2 =int(input(PREGUNTA_NUMERO1))
 print(MENSAJE_DESPEDIDA3)
+
+#Ingresar montos de compras de un cliente  (se desconoce la cantidad de datos que cargará, la cual puede cambiar en cada ejecución), cortando el ingreso de datos cuando el usuario ingrese el monto 0.
+# Si ingresa un monto negativo, no se debe procesar y se debe pedir que ingrese un nuevo monto. Al finalizar, informar el total a pagar teniendo que cuenta que, si las ventas superan el total de $1000, se le debe aplicar un 10% de descuento.
+#----Preguntas----#
+PREGUNTA_MONTO = 'Ingrese la cantidad o montos totales de las compras. Por favor : '
+#----Mensajes----#
+MENSAJE_DESCUENTO= 'El monto de comprar superó los $1000. Se aplicará un descuento del 10%.'
+MENSAJE_FALLA= 'El monto ingresado no es válido.Verifique e ingréselo nuevamente.'
+#----Entrada al código----#
+valor = float(input(PREGUNTA_MONTO))
+acumulado = 0 
+
+while (valor != 0):
+    if (valor <= 0):
+        print (MENSAJE_FALLA)
+    else: 
+        acumulado += valor 
+    valor = float(input(PREGUNTA_MONTO))
+if (acumulado > 1000):
+    descuento = acumulado - (acumulado*0.10)
+    print (MENSAJE_DESCUENTO)
+    MENSAJE_DA= f'El monto total a cancelar es: {descuento}'
+    print (MENSAJE_DA)
+print ('Muchas gracias por su compra.Regrese.')

@@ -1,4 +1,4 @@
-
+listaPesos = [20000,30000,4000,2500,1000,7600]
 PREGUNTA_MONEDA ='''
     C- Mostrar original en pesos colombianos 
     D- Mostrar en Dólares
@@ -8,8 +8,6 @@ MENSAJE_PESOS = 'Mostrando lista original'
 MENSAJE_DOLARES = 'Mostrando lista en dólares'
 MENSAJE_EURO ='Mostrando lista en euros'
 MENSAJE_ERROR = 'INGRESO NO VÁLIDO'
-
-listaPesos = [20000,30000,4000,2500,1000,7600]
 
 listaEuros = []
 for elemento in listaPesos:
