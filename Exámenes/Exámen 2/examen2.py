@@ -63,7 +63,7 @@ while (opcion_escogida != 4) :
             if (temperatura < 36):
                 diagnostico= 'PRECAUCIÓN: Muy baja temperatura. Probrablemente sea hipotermia'
             elif (temperatura >= 37.6):
-                diagnostico = '¡CUIDADO! Muy alta temperatura.Si no baja pronto,causará el paciente puede convulsionar.'
+                diagnostico = '¡CUIDADO! Muy alta temperatura.Si no baja pronto,el paciente puede convulsionar.'
             else :
                 diagnostico = 'No hay de qué preocuparse. La temperatura está normal'
             listaDiagnostico.append (diagnostico)
