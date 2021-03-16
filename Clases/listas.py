@@ -43,7 +43,7 @@ for indice in range (largoListaEdades) :
     print('Estoy en la posición',
     indice, 'valgo',
     edades [indice])
-largoListaEdades= len (nombres)
+largoListaNombre= len (nombres)
 for indice in range (largoListaEdades) :
     print(nombres [indice])
 
@@ -56,14 +56,14 @@ for posicion in range (largoListaEdades) :
 print(edades)
 print(posicionesConValoresPares)
 
-#Solo cuando les interese mostrar la lista
+#Solo cuando les interese mostrar la lista (orientado a valores)
 posicion = 0
 for edad in edades :
     print (edad)
 for nombre in nombres :
     print (nombre)
     print (posicion)
-    posicion +=1
+    posicion += 1
 
 posicion = 0
 posicionesPares = []

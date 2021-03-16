@@ -72,7 +72,7 @@ while (opcion_escogida != 5) :
         print (listaPesos)
     #------------------Opción no válida------------#
     else :
-        print ('Respuesta no válida')
+        print (MENSAJE_ERROR)
     opcion_escogida =int(input(PREGUNTA_NUMERO))
 
 print (MENSAJE_DESPEDIDA)
