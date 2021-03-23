@@ -46,14 +46,17 @@ def dividir (a = 0 ,b = 1):
     dividi = a / b
     return dividi
 
+#------------------Elevar a una potencia un número------------------#
+PREGUNTA_NUMERO= 'Ingresa un número que quieras calcular (exponente) dado una base que elijas : '
+PREGUNTA_BASE = 'Ingresa una base que quieras calcular : '
+numero_exponente = int (input(PREGUNTA_NUMERO))
+numero_base = int (input(PREGUNTA_BASE))
+def potenciar (base = 0 ,exponente = 1):
+    potencia = base ** exponente
+    return potencia
+print (potencia (numero_base, numero_exponente))
+
 print(restar(83,87))
 print(multiplicar(83,87))
 print(dividir(83,87))
 print(dividir())
-#------------------Elevar a una potencia un número------------------#
-PREGUNTA_NUMERO= 'Ingresa un número que quieras calcular (exponente) dado una base que será 3 : '
-numero_ingresado = int (input(PREGUNTA_NUMERO))
-def elevar  (base = 3, exponente = numero_ingresado):
-    potenciacion = base ** numero_ingresado
-    return potenciacion
-print(elevar (3,numero_ingresado))
