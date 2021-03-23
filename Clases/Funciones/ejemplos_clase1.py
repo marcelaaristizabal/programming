@@ -50,3 +50,10 @@ print(restar(83,87))
 print(multiplicar(83,87))
 print(dividir(83,87))
 print(dividir())
+#------------------Elevar a una potencia un número------------------#
+PREGUNTA_NUMERO= 'Ingresa un número que quieras calcular (exponente) dado una base que será 3 : '
+numero_ingresado = int (input(PREGUNTA_NUMERO))
+def elevar  (base = 3, exponente = numero_ingresado):
+    potenciacion = base ** numero_ingresado
+    return potenciacion
+print(elevar (3,numero_ingresado))
