@@ -6,7 +6,9 @@ def sumar (a = 0 ,b = 0):
     '''
     suma = a + b
     return suma
-
+def linedesing (cantidad = 10 , simbolo= '#' ):
+    print (simbolo * cantidad)
+    return None 
 #------------------Restar 2 números-----------------------#
 def restar (a = 0 ,b = 0):
     '''
@@ -48,3 +50,5 @@ print (potenciar (numero_base, numero_exponente))
 #-----------------Funciones que dependen de otras----------------------#
 def calcular (operacion, numeroA,numeroB):
     print (operacion(numeroA,numeroB))
+
+def mostrarLista (lista)
