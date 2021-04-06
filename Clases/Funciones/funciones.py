@@ -51,4 +51,10 @@ print (potenciar (numero_base, numero_exponente))
 def calcular (operacion, numeroA,numeroB):
     print (operacion(numeroA,numeroB))
 
-def mostrarLista (lista)
+def mostrarLista (lista):
+    for elemento in lista:
+        print(elemento)
+
+def mostrar2Lista (lista1, lista2):
+    for i in range (len(lista1)):
+        print(lista1 [i],'\t',lista2 [i])

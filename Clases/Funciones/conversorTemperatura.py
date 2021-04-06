@@ -19,7 +19,7 @@ def conversionTemperatura (temperaturas, unidad) :
             conversion == temperatura + 273.15
         else :
             listaConvertida = None
-        listaConvertida.append(conversion)
+        listaConvertida.append(round(conversion,2))
     return listaConvertida
 def clasificarTemperaturas (temperaturas):
     '''Retorna la clasificación de las temperaturas ingresadas
@@ -42,4 +42,4 @@ def mostrarTopes (lista):
     periodoHoras = round (24/len(lista),2)
     print('La mayor temperatura es',mayor)
     print ('La menor temperatura es',menor)
-    print('El periodo')
+    print('El periodo de muestras es ',periodoHoras)
