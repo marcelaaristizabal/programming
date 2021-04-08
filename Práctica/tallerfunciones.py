@@ -134,6 +134,5 @@ print (MENSAJE_DESPEDIDA)
 PREGUNTA_NOMBRE =' ¿Cómo te llamas? '
 NOMBRE = input (PREGUNTA_NOMBRE)
 despedida = f'Hasta luego,{NOMBRE}. Ten un bonito día.'
-
 def despedir (NOMBRE):
     return despedida
