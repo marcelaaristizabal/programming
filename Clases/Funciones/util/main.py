@@ -3,8 +3,8 @@ import operaciones_strings as ops
 #--------Mensajes--------#
 MENSAJE_OPERACION='{} las dos entradas'
 ops.linedesing(12)
-numeroA = int (input('Ingrese un número A'))
-numeroB = int (input('Ingrese un número B'))
+numeroA = int (input('Ingrese un número A : '))
+numeroB = int (input('Ingrese un número B : '))
 ops.linedesing(12)
 print(MENSAJE_OPERACION.format('Sumando'))
 opm.calcular (opm.sumar,numeroA,numeroB)
