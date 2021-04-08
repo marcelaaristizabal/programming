@@ -84,7 +84,7 @@ def calcularArea (base = 1,altura =1 ) :
     area = (base*altura)/2
     print(area)
 calcularArea(base,altura)
-calcularArea(2,3)
+
 
 lista = [12,54,89,14,37,36,27,43]
 mayor = max (lista)
