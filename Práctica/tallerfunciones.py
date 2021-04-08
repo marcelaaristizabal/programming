@@ -135,5 +135,5 @@ PREGUNTA_NOMBRE =' ¿Cómo te llamas? '
 NOMBRE = input (PREGUNTA_NOMBRE)
 despedida = f'Hasta luego,{NOMBRE}. Ten un bonito día.'
 
-def despedir ():
+def despedir (NOMBRE):
     return despedida
