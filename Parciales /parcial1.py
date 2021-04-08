@@ -64,8 +64,6 @@ mostrar3Lista(nombres,apellidos,edades)
 
 PREGUNTA_BASET= 'Ingresa un número entero (en metros) que será la base para el área de un triángulo : '
 PREGUNTA_ALTURA= 'Ingresa otro número entero (en metros ) que será la altura de un triángulo : '    
-base = int (input(PREGUNTA_BASET))
-altura = int (input(PREGUNTA_ALTURA))
 MENSAJE_AREA='''
         Devuelve el área de un triángulo de base A y altura B.
         Se puede ingresar la base y la altura (diferentes o iguales). 
@@ -108,16 +106,12 @@ def mostrarTopes (lista):
     print(MENSAJE_PROMEDIO)
 mostrarTopes(lista)
 
-
-PREGUNTA_n = 'Ingresa la posición (entero) que quieras saber de la Sucensión de Fibonacci : '
-n_fib= int(input(PREGUNTA_n))
-fn = fibonacci(n-1) + fibonacci(n-2)
-def fibonacci (n):
+def fib (n):
     if (n < 2):
         return n
     else:
         #Fórmula de Fibonacci:
         # fn = fn-1 + fn-2
-        fn = fibonacci(n-1) + fibonacci(n-2)
-        print(fn)
-    fibonacci(n)
+        return fib (n-1) + fib (n-2)
+        print(fib(n+1)+ fib(n-2))
+fib (10)
