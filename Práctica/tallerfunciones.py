@@ -49,13 +49,11 @@ PREGUNTA_OPCION = '''
             Hola,nuevamente...Ahora podrás ingresar una lista de números (dentro de un rango que podrás escoger). 
             Pero solamente te mostraré los números que sean pares.
             Ingrese las siguientes opciones :
-            1- Para escrbir su lista de números.
+            1- Para escribir su lista de números.
             2- Salir.
 '''
 MENSAJE_DESPEDIDA = 'Muchas gracias por su participación. Que tenga un buen día.'
 opcion_escogida= int (input(PREGUNTA_OPCION))
-INGRESO_LISTA = 'Ingrese su lista de números : '
-lista = int (input(INGRESO_LISTA)) 
 MENSAJE_ERROR =' Ingrese una opción válida.'
 PREGUNTA_CANTIDAD = ''' 
     ¿Cuántos números deseas ingresar a tu lista ? :
@@ -64,55 +62,52 @@ PREGUNTA_CANTIDAD = '''
     c- 11
     d- 13
 '''
-total = None
+INGRESO_LISTA = 'Ingrese su lista de números : '
+#lista = int (input(INGRESO_LISTA)) 
+total = 0
+def par (lista) :
+    pares = []
+    for elemento in lista :
+        if (elemento % 2 == 0):
+            pares.append (elemento)
+            print(elemento)
 
-cantidad_lista = input(PREGUNTA_CANTIDAD)
-while (cantidad_lista != a and cantidad_lista != b and cantidad_lista != c and cantidad_lista != d) :
-    print(MENSAJE_ERROR)
-    cantidad_lista = (input(PREGUNTA_CANTIDAD))
-
-if (cantidad_lista == a):
-    total= 5
-elif (cantidad_lista == b ) :
-    total = 9
-elif (cantidad_lista == c) :
-    total = 11
-else:
-    total = 13
-sumatoria = 0 
-
-
-#----------------Opción 1----------------#
-opcion_escogida =int (input(PREGUNTA_OPCION))
-lista_ingresados += [lista]
-while (opcion_escogida != 2 and total > 1):
-    print(PREGUNTA_CANTIDAD)
+if (opcion_escogida == 1):
     cantidad_lista = input(PREGUNTA_CANTIDAD)
-    lista = int(input(INGRESO_LISTA)) 
-    sumatoria += cantidad_lista
-    if (lista == total):
-        def ListaPares (lista):
-            pares = []
-            for elemento in lista:
-                if (elemento % 2 == 0):
-                    pares.append (elemento)
-                print(elemento)
+    while (cantidad_lista != 'a' and cantidad_lista != 'b' and cantidad_lista != 'c' and cantidad_lista != 'd') :
+        print(MENSAJE_ERROR)
+        cantidad_lista = (input(PREGUNTA_CANTIDAD))
+    if (cantidad_lista == 'a'):
+        total= 5
+    elif (cantidad_lista == 'b' ) :
+        total = 9
+    elif (cantidad_lista == 'c') :
+        total = 11
+    else:
+        total = 13
+    lista_ingresados = [0] * total
+    for i in range (len(lista_ingresados)):
+        lista_ingresados [i] =int (input(INGRESO_LISTA))
+    print('Los números pares de tu lista son :' )
+    par (lista_ingresados)
 
-print(MENSAJE_DESPEDIDA)
-#Devolver únicamente elementos mayores a 24. (Tras el punto anterior)
+#Devolver únicamente elementos mayores a 24. (Tras el punto anterior).
+MENSAJE_ADVERTENCIA ='En la siguiente fase vas a crear una lista (la cantidad que quieras), pero solo te mostraré aquellos que sean mayores de 24.'
+def mayor (lista):
+    mayores =[]
+    for elemento in lista:
+        if (elemento > 24):
+            mayores.append (elemento)
+    print(mayores)
+    return mayores
 
-
-
-
-
-
-
-
-
-
-
-
-
+PREGUNTA_CANTIDAD_2 = '¿Cuántos números deseas ingresar a tu lista ? : '
+cantidad_lista = int(input(PREGUNTA_CANTIDAD_2))
+lista_ingresados = [0] * cantidad_lista
+for i in range (len(lista_ingresados)):
+    lista_ingresados [i] =int (input(INGRESO_LISTA))
+print('Los números mayores de 24 de tu lista son :' )
+mayor (lista_ingresados)
 
 #Función que calcule el IMC.
 
@@ -131,8 +126,9 @@ print (MENSAJE_DESPEDIDA)
 
 #Función de despedida.
 
-PREGUNTA_NOMBRE =' ¿Cómo te llamas? '
 NOMBRE = input (PREGUNTA_NOMBRE)
-despedida = f'Hasta luego,{NOMBRE}. Ten un bonito día.'
+PREGUNTA_NOMBRE =' ¿Cómo te llamas? '
 def despedir (NOMBRE):
+    despedida = f'Hasta luego,{NOMBRE}. Ten un bonito día.'
     return despedida
+print (despedir(NOMBRE))
