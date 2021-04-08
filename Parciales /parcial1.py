@@ -113,5 +113,4 @@ def fib (n):
         #Fórmula de Fibonacci:
         # fn = fn-1 + fn-2
         return fib (n-1) + fib (n-2)
-        print(fib(n+1)+ fib(n-2))
 fib (10)
