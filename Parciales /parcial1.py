@@ -70,8 +70,8 @@ MENSAJE_AREA='''
         Pero por defecto, la base vale 0 y la altura vale 1.
     '''
 
-area = (base*altura)/2
-def calcularArea (base = 1,altura =1 ) :
+
+def calcularArea () :
     base = int (input(PREGUNTA_BASET))
     altura = int (input(PREGUNTA_ALTURA))
     MENSAJE_AREA='''
@@ -80,37 +80,30 @@ def calcularArea (base = 1,altura =1 ) :
         Pero por defecto, la base vale 0 y la altura vale 1.
     '''
     area = (base*altura)/2
-    print(area)
-calcularArea(base,altura)
+    print (area)
+calcularArea ()
 
 
 lista = [12,54,89,14,37,36,27,43]
-mayor = max (lista)
-sumatoria = 0
-menor = min (lista)
-promedioLista = sum(lista) / len(lista)
-MENSAJE_MAXIMO =f'El dato mayor de la lista es {mayor}'
-MENSAJE_MINIMO=f'El dato menor de la lista es {menor}'
-MENSAJE_PROMEDIO =f'El promedio de todos los datos de la lista es {promedioLista}'
 
 def mostrarTopes (lista):
-    sumatoria = 0
     mayor =max (lista)
+    MENSAJE_MAXIMO =f'El dato mayor de la lista es {mayor}'
     print(MENSAJE_MAXIMO)
     menor = min (lista)
+    MENSAJE_MINIMO=f'El dato menor de la lista es {menor}'
     print(MENSAJE_MINIMO)
-    acumulado = 0
-    for elemento in lista:
-        acumulado += elemento
     promedioLista = sum(lista) / len(lista)
+    MENSAJE_PROMEDIO =f'El promedio de todos los datos de la lista es {promedioLista}'
     print(MENSAJE_PROMEDIO)
 mostrarTopes(lista)
 
-def fib (n):
+def fibonacci (n):
     if (n < 2):
         return n
     else:
+        
         #Fórmula de Fibonacci:
         # fn = fn-1 + fn-2
-        return fib (n-1) + fib (n-2)
-fib (10)
+        return fibonacci (n-1) + fibonacci (n-2)
+print (fibonacci(10))
