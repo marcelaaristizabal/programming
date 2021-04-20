@@ -80,7 +80,6 @@ class Animal ():
                     {self.tamaño}
                     {self.edad}  
                     {self.peso}
-                    {tamañoN} 
                     {self.denticion}
         ''')
 
@@ -91,8 +90,8 @@ class Animal ():
             self.especie = "Rosado"
     def salvadorDeVidas (self,vidas):
         print(f'Güi, güi...Tototo...,soy {self.nombre} y puedo ayudar a salvar vidas de personas {vidas}')
-        print ('Este tipo de delfines puede pesar cerca de 150 kilogramos')
-
+        pesoRosado= 'Este tipo de delfines puede pesar cerca de 150 kilogramos'
+        print(pesoRosado)
 
 delfin = Animal(genero)
 delfin.saludar()
@@ -100,3 +99,4 @@ print(delfin.especie)
 delfin.alimentar()
 print(delfin.ubicacion)
 delfin.mostrarAtributos()
+delfin.rosado()
