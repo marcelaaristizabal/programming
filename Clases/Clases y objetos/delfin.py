@@ -1,3 +1,9 @@
+MENSAJE_CONTEXTO ='Hola,en el día de hoy te mostraré en pantalla algunos datos curiosos de los delfines (De acuerdo a cada especie)'
+PREGUNTAGENERO = ''' ¿De qué género de la especie Delphinus Delphis quisieras conocer ? :
+                    1 - Hembra
+                    2 - Macho
+'''
+genero = input (PREGUNTAGENERO)
 class Animal ():
     '''
         Esta es la clase Animal que muestra de manera ilutrativa atributos,
@@ -14,8 +20,29 @@ class Animal ():
             Muestra los atributos del delfín 
             De la especie Delphinus Delphis.
     '''
-    def __init__(self):
+    def __init__(self,genero) :
         print("Chasquidos y silbidos")
+        if ( genero == 'Hembra'):
+            nombreEntrada = 'Josephine'
+            pesoDelfin= 'El promedio normal del peso de una hembra de la especie Delphinus Delphis es de 200 kilogramos'
+            tamañoDelfin ='''En el PACÍFICO ORIENTAL las hembras pueden medir entre  1,6-2,2 m...
+                        Mientras que en ATLÁNTICO ORIENTAL tienen un tamaño promedio de 2,70m. 
+            '''
+            edadEntrada= 'Las hembras de esta especie sobreviven en cautiverio entre 25 y 35 años.'
+        elif (genero == 'Macho'):
+            nombreEntrada = 'Tómas'
+            pesoDelfin = 'El promedio normal del peso de un macho de la especie Delphinus Delphis es de 200 kilogramos.'
+            tamañoDelfin = '''En el PACÍFICO ORIENTAL los machos pueden medir entre 1,7-2,3 m
+                        Mientras que en ATLÁNTICO ORIENTAL tienen un tamaño promedio de 2,70m. 
+            '''
+            edadEntrada = 'Los machos de esta especie pueden sobrevivir en cautiverio cerca de 40 años.'
+        else:
+            print('INGRESA UNA OPCIÓN VÁLIDA.')
+    
+        self.edad = edadEntrada
+        self.peso = pesoDelfin
+        self.nombre= nombreEntrada
+        self.tamaño= tamañoDelfin
         self.especie = "Delphinus delphis"
         self.ubicacion = '''El Delfín común oceánico o de aletas cortas,es una especie oceánica con
                         una amplia distribución en los mares tropicales de los océanos:
@@ -30,22 +57,20 @@ class Animal ():
                         c- Mar MEDITERRÁNEO
                         d- Mar Negro
         '''
-    
     def saludar (self,saludo):
         #Los delfines suelen utilizar silbidos únicos propios de cada uno 
         #cuando se reunen con otro grupo a modo de saludo y presentación.
-        print(saludo)
+        print(f'Hola, soy {self.nombre}. Así es como te saludo', saludo)
+    
+
     def mostrarAtributos (self):
+        print(f''' Mi nombre {self.nombre}. Soy un@ delfín muy feliz.
+                    {self.tamaño}
+                    {self.edad}  
+                    {self.peso}
+        ''')
+    def datosCuriosos (self):
         print ('''Al nacer, el delfín común oceánico mide alrededor de 80-100 cm.
-            ESTATURA DE ADULTOS EN EL PACÍFICO ORIENTAL :
-                            Hembras:1,6-2,2 m 
-                            Machos: 1,7-2,3 m
-
-            ESTATURA ADULTOS EN ATLÁNTICO ORIENTAL:
-                            Hembras y Machos : 2,70m. 
-
-            PESO: 200 kg. 
-
             DENTICIÓN : 41 y 54 pares de dientes en ambas hemimandíbulas, pudiendo presentar, uno o dos pares más, en la superior. 
 
             PIGMENTACIÓN: El color gris oscuro predomina en la superficie dorsal, desde la frente hasta la aleta dorsal,
@@ -57,17 +82,19 @@ class Animal ():
             Así como una banda negra que une aletas pectorales con el maxilar inferior. Los juveniles tienen una coloración más clara.
             Los machos adultos tienen una quilla en el área genital, marcada con la edad.
         ''')
+
     def alimentar (self):
-        print('La alimentación del delfín común se basa en calamares y peces pequeños que forman bancos, alimentándose de noche y descansando por el día.')
+        print('La alimentación del delfín común macho o hembra se basa en calamares y peces pequeños que forman bancos, alimentándose de noche y descansando por el día.')
 
-delfin = Animal()
+saludo = '''‘Güi, güi...
+            Tototo...’
+'''
 
 
-delfin.saludar ('''
-                Güi, güi.... 
-                Tototo...
-            ''')
+delfin = Animal(genero)
+delfin.saludar(saludo)
 print(delfin.especie)
-print(delfin.ubicacion)
-delfin.mostrarAtributos ()
 delfin.alimentar()
+print(delfin.ubicacion)
+delfin.mostrarAtributos()
+delfin.datosCuriosos()
