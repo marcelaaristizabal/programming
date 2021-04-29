@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 #----------------1--------------#
 equipos = ['Atlético Nacional','Santa Fé','Millonarios FC','Deportivo Cali','Deportes Tolima','La Equidad','Junior Club SA.','América de Cali',]
 partidosGanados = [10,9,10,8,8,8,8,7]
-plt.bar(equipos,partidosGanados, color ='y')
+plt.barh(equipos,partidosGanados, color ='y')
 ##################
 #Título
 plt.title('Mejores equipos de futbol en Colombia')
@@ -15,7 +15,7 @@ plt.show ()
 #-----------------2--------------#
 paisesmedallasdeOroNatacion= ['Estados Unidos','Reino Unido','Países Bajos','Canadá','Alemania','Francia','Suecia','Polonia']
 cantidadDeMedallasOroNatacion= [240,180,172,153,134,117,103,102]
-plt.bar(paisesmedallasdeOroNatacion,cantidadDeMedallasOroNatacion, color = 'g')
+plt.barh (paisesmedallasdeOroNatacion,cantidadDeMedallasOroNatacion, color = 'g')
 #########################
 #Título
 plt.title('Mejores 8 países en el Medallero de Natación en los Juegos Paralímpicos')
@@ -28,7 +28,7 @@ plt.show ()
 #------------------3-----------------#
 fluctuacionDolar = [1175,1525,1875,2225,2575,2925,3275,3625,3650,4350]
 añosTasaDeCambio = [2011,2012,2013,2014,2015,2016,2017,2018,2019,2020]
-plt.bar(añosTasaDeCambio,fluctuacionDolar, color = 'c')
+plt.barh (añosTasaDeCambio,fluctuacionDolar, color = 'c')
 ##########################
 #Título 
 plt.title('Fluctuación del dólar en los últimos 10 años')
@@ -54,7 +54,7 @@ plt.show ()
 #---------------5--------------------#
 cantidadDeMegalopolis = [ 36.6 , 22.5 , 22.15 ,20.9 , 20.25 , 20 , 19.7 , 18.8 ,18.4 , 16.8 ]
 megalopolisDelMundo = ['Tokio (Japón)','Seúl(Corea)','Delhi (India)','Bombay (India)','São Paulo (Brasil)','CDX (México)','Nueva York (EE.UU)','Jakarta (Indonesia)','Shangai (China)','Osaka (Japón)']
-plt.bar (megalopolisDelMundo, cantidadDeMegalopolis, color = 'r')
+plt.barh (megalopolisDelMundo, cantidadDeMegalopolis, color = 'r')
 ########################
 #Título
 plt.title('Ciudades más pobladas del mundo (Megalópolis)')
