@@ -39,9 +39,9 @@ plt.savefig('GraficodeBarrasFluctuacionUS.png')
 plt.show ()
 
 #-----------------4------------------#
-cantidadDeReproducionesMensualesSpotify= [32.2,12.5,45.5,54.6,37.3]
+cantidadDeReproducionesMensualesSpotify= [32.2 , 12.5 , 45.5 , 54.6 , 37.3 ]
 artistasEscuchadosSpotifyMensual= ['Camila Cabello','Blink 182','Bad Bunny','J Balvin','Coldplay']
-plt.bar(artistasEscuchadosSpotifyMensual, cantidadDeMedallasOroNatacion, color = 'm' )
+plt.bar(artistasEscuchadosSpotifyMensual,cantidadDeReproducionesMensualesSpotify, color = 'm' )
 #########################
 #Título 
 plt.title(' Artistas más escuchados mensuales en Spotify ')
@@ -52,14 +52,14 @@ plt.savefig ('GraficosdeBarrasArtistasEscuchados.png')
 plt.show ()
 
 #---------------5--------------------#
-cantidadDeMegalopolis = [36.6,22.5,22.15,20.9,20.25,20,19.7,18.8,18.4,16.8]
+cantidadDeMegalopolis = [ 36.6 , 22.5 , 22.15 ,20.9 , 20.25 , 20 , 19.7 , 18.8 ,18.4 , 16.8 ]
 megalopolisDelMundo = ['Tokio (Japón)','Seúl(Corea)','Delhi (India)','Bombay (India)','São Paulo (Brasil)','CDX (México)','Nueva York (EE.UU)','Jakarta (Indonesia)','Shangai (China)','Osaka (Japón)']
 plt.bar (megalopolisDelMundo, cantidadDeMegalopolis, color = 'r')
 ########################
 #Título
 plt.title('Ciudades más pobladas del mundo (Megalópolis)')
 plt.xlabel('Megalópolis del Mundo')
-plt.ylabel('Cantidad de habitantes en las Megalópolis')
+plt.ylabel('Cantidad de habitantes (Millones) en las Megalópolis')
 plt. savefig ('GraficodeBarrasMegalopolis.png')
 #######################
 plt.show ()
