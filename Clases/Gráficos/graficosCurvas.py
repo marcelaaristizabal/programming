@@ -7,4 +7,11 @@ print (muestras)
 voltaje = list (ecgData ['valor'].values())
 print (voltaje [-10:])
 plt.plot(muestras,voltaje)
+###############################
+plt.title('Electrocardiograma (ECG)')
+
+plt.xlabel('Tiempo (µs)')
+plt.ylabel('Amplitud o Voltaje(µV)')
+plt.savefig('ELectrocardiograma.png')
+#################################
 plt.show ()
