@@ -10,7 +10,7 @@ plt.plot(muestras,voltaje)
 ###############################
 plt.title('Electrocardiograma (ECG)')
 
-plt.xlabel('Tiempo (µs)')
+plt.xlabel('Tiempo (ms)')
 plt.ylabel('Amplitud o Voltaje(µV)')
 plt.savefig('ELectrocardiograma.png')
 #################################
