@@ -17,7 +17,7 @@ acumulador = 0
 porcentajesHabitantes= [34,8,14,31,13]
 pieCiudades = ['Barranquilla','Sincelejo','Villavicencio','Cartagena','Manizales']
 
-etiquetarElementosPorcentuales(cantidadHabitantes, pieCiudades,'--->')
+etiquetarElementosPorcentuales(cantidadHabitantes, pieCiudades,'---> ')
 plt.pie(cantidadHabitantes,labels = pieCiudades,
         explode=pieExplode, 
         shadow=True,
