@@ -28,4 +28,3 @@ _explode[ubicacion] = 0.1
 
 plt.pie(listaPoblacion,label=listaCiudades,explode = _explode)
 plt.show ()
-
