@@ -95,7 +95,7 @@ def guardarLinea  (nombreArchivo, lineaIn):
     archivo.writelines(lineaIn)
 
 nameFile = 'mantenimientos.txt'
-isValidate = validarArchivo (name,'Seguimiento de mantenimiento de equipos médicos.')
+isValidate = validarArchivo (nameFile,'Seguimiento de mantenimiento de equipos médicos.')
 if (isValidate):
     descEquipo = input ('Ingrese la descripción del equipo : ')
     nombre = validateString ('Ingrese su nombre : ')
