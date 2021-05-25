@@ -24,5 +24,6 @@ elif (isSobrePeso) :
     resultado = MENSAJE_SOBRE_PESO
 else :
     resultado = MENSAJE_OBESO
+
 print (MENSAJE_DESPEDIDA, imc)
 print (resultado)
