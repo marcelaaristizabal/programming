@@ -56,7 +56,7 @@ else :
 print (MENSAJE_DESPEDIDA, imc)
 print (resultado)
 
-#----------------------------------Punto2-----------------------#.
+#----------------------------------Punto2--------------------------------------#.
 import sys
 MENSAJE_PARRAFO = '''Ingresa un párrafo del tema que desees. Pero la condición es que al finalizar debes agregarle un punto (.)
             Agrega tu párrafo : 
@@ -69,8 +69,8 @@ while (isCorrectInfo == False):
         assert (usuarioParrafo.endswith(' . '))
         isCorrectInfo = True
     except AssertionError: 
-            print ('Recuerda que debe terminar con un punto "." . Intentalo nuevamente.')
-    usuarioParrafo = input(MENSAJE_PARRAFO)
+        print ('Recuerda que debe terminar con un punto "." . Intentalo nuevamente.')
+
 
 #-->Palabra más grande y palabra más pequeña.
 usuarioParrafo = input(MENSAJE_PARRAFO)
@@ -83,7 +83,7 @@ print(usuarioParrafo)
 palabras = usuarioParrafo.split(' ')
 print(palabras)
 
-#---------------------------------Punto3------------------------#.
+#---------------------------------Punto3------------------------------------#.
 import sys
 nombreArchivo2 ='mantenimientos.txt'
 try:

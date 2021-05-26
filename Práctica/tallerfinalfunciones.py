@@ -11,7 +11,6 @@ def validateFloat (pregunta):
             print ('Ingresaste datos incorrectos. Inténtalo nuevamente.')
     return valor 
 
-
 def validateString (pregunta):
     isCorrectData = False 
     while (isCorrectData == False):
@@ -45,15 +44,17 @@ def calcularIMC ():
     imc = pesoIn/(estaturaIn**2)
     return imc,nombreIn
 
-imc,nombre=calcularIMC()
-print (imc,nombre)
+calcularIMC ()
+
+imc,nombre = calcularIMC()
+print (imc, nombre)
 print(f'El IMC de {nombre} es de {imc} %')
 
 
 #Punto2-->Pida al usuario que ingrese un párrafo y luego muestre en pantalla cual es la palabra más grande,la palabra más pequeña.
 #  Valide que el párrafo ingresado termine en punto sino es así se debe pedir al usuario que ingrese nuevamente el párrafo.
 
-def validateEndWith (strValidate,pregunta):
+def validateEndWith (strValidate, pregunta):
     isCorrectData = False
     while (isCorrectData == False):
         try : 
@@ -61,15 +62,16 @@ def validateEndWith (strValidate,pregunta):
             assert (valor.endswith (strValidate))
             isCorrectData = True 
         except AssertionError:
-            print (f'Los datos son incorrectos.Ingrese nuevamente y recuerde que debe termiar con "{strValidate}"')
+            print (f'Los datos son incorrectos.Ingrese nuevamente y recuerde que debe terminar con " {strValidate} " ')
+    return valor 
 
-parrafo = validateEndWith (' , ','Ingrese un párrafo : ')
-parrafo = parrafo [:-1]
+parrafo = validateEndWith (' . ','Ingrese un párrafo : ')
+parrafo = parrafo [ : - 1 ]
 palabras = parrafo.split (' ')
 print (palabras)
-print (f'La palaba más grande es "{max(palabras, key = len)}" y el menor es "{min(palabras, key = len)}"')
+print (f'La palaba más grande es "{max(palabras, key = len)}" y el menor es "{min(palabras, key = len)}" ')
 
-parrafo = 'Hola, ¿cómo anda todo?'
+parrafo = 'Hola , cómo anda todo'
 parrafo = parrafo.replace (' , ',' ')
 print (parrafo)
 palabras = parrafo.split(' ')
@@ -90,6 +92,7 @@ def validarArchivo (nombreArchivo, descripcion):
         print ('2')
         archivo.writelines (descripcion)
         return False
+
 def guardarLinea  (nombreArchivo, lineaIn):
     archivo = open (nombreArchivo,'a')
     archivo.writelines(lineaIn)
