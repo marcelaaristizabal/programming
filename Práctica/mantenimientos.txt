@@ -1,1 +1,2 @@
 Base de datos de maquinaria biomédica especializada.
+Nombre del equipo biomédico : Resonador magnético Descripción de la maquina o dispositivo biomédico :  Asistente para resonancias magnéticas en el Hospital Pablo Tobón Uribe con fuga de helio Precio del mantenimiento por el equipo biomédico : 30000000.0
