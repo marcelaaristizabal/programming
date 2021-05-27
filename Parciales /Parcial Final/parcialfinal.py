@@ -133,7 +133,7 @@ while (isCorrectInfo == False):
         isCorrectInfo = True
     except AssertionError: 
             print ('Ingresaste un dato no válido')
-isCorrectInfo = False
+
 #-----------------------------------Punto4--------------------------------------#
 import sys
 nombreArchivo ='pacientes.txt'
