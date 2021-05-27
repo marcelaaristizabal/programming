@@ -1,4 +1,4 @@
-#------------------------------------Punto1--------------------------#.
+#------------------------------------Punto1-----------------------------------#.
 MENSAJE_IMC = 'Hola, soy una calculadora del ÍNDICE DE MASA CORPORAL.Ahora calcularé el tuyo.'
 print (MENSAJE_IMC)
 PREGUNTA_ESTATURA = 'Ingresa tu estatura en metros (m) : '
@@ -76,7 +76,7 @@ palabras = usuarioParrafo.split (' ')
 print (palabras)
 print (f'La palabra más grande es "{max(palabras, key= len)}"  y la palabra más pequeña es "{min (palabras,key = len)}" ')
 
-#---------------------------------Punto3------------------------------------#.
+#-------------------------------------Punto3--------------------------------------#.
 import sys
 nombreArchivo2 ='mantenimientos.txt'
 try:
