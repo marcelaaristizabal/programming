@@ -1,0 +1,3 @@
+Base de datos de manejo de pacientes en el consultorio de Neurología.
+Nombre del paciente: Allyson Jauregui Cabello  Descripción de la enfermedad o patología del paciente : Edema cerebral por golpe en la cavidad craneal (fuga de LCR) tras accidente automovilístico.Precio de la consulta en pesos colombianos (COP) : 800000.0
+Nombre del paciente: Alon Gonzalez Aristizábal Descripción de la enfermedad o patología del paciente : Fuga de LCR por meningitis grave.Precio de la consulta en pesos colombianos (COP) : 400000.0
