@@ -61,30 +61,24 @@ import sys
 MENSAJE_PARRAFO = '''Ingresa un párrafo del tema que desees. Pero la condición es que al finalizar debes agregarle un punto (.)
             Agrega tu párrafo : 
             '''
-
 isCorrectInfo = False
+usuarioParrafo = ' '
+
 while (isCorrectInfo == False):
-    try : 
-        usuarioParrafo = input (MENSAJE_PARRAFO)
-        assert (usuarioParrafo.endswith(' . '))
-        isCorrectInfo = True
-    except AssertionError: 
+    usuarioParrafo = input(MENSAJE_PARRAFO)
+    isCorrectInfo = (usuarioParrafo.endswith(' . '))
+
+    if (isCorrectInfo == False):
         print ('Recuerda que debe terminar con un punto "." . Intentalo nuevamente.')
 
 
 #-->Palabra más grande y palabra más pequeña.
-usuarioParrafo = input(MENSAJE_PARRAFO)
-print (usuarioParrafo [:-1]) #Todo hasta donde se diga. En este caso se elimina el último elemento.
+usuarioParrafo = usuarioParrafo [:-1] #Todo hasta donde se diga. En este caso se elimina el último elemento.
 palabras = usuarioParrafo.split (' ')
 print (palabras)
 print (f'La palabra más grande es "{max(palabras, key= len)}"  y la palabra más pequeña es "{min (palabras,key = len)}" ')
-usuarioParrafo= usuarioParrafo.replace(' , ',' ')
-print(usuarioParrafo)
-palabras = usuarioParrafo.split(' ')
-print(palabras)
 
 #---------------------------------Punto3------------------------------------#.
-import sys
 nombreArchivo2 ='mantenimientos.txt'
 try:
     archivo2 = open (nombreArchivo2)
