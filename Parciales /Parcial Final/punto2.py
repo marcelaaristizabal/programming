@@ -43,5 +43,6 @@ class Doctor (Humano):
 
 doctor1 = Doctor ('Gerónimo Restrepo','Masculino',32)
 imc= Doctor.calcularIMC ()
+
 MENSAJE_DESPEDIDA = f"Tu IMC es ...{imc}"
 print (MENSAJE_DESPEDIDA)

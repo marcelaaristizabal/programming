@@ -8,7 +8,7 @@ while (isCorrectInfo == False):
         cantidadDolares= float (input(PREGUNTA_DOLARES))
         isCorrectInfo = True
     except ValueError : 
-        print ('Ingresaste un dato no válido.')
+        print ('Ingresaste un dato no válido.Inténtelo nuevamente.')
 
 euros = cantidadDolares * 0.82
 cantidadEuros = euros
@@ -23,5 +23,4 @@ while (isCorrectInfo == False):
         assert (nombre.isalpha())
         isCorrectInfo = True
     except AssertionError: 
-            print ('Ingresaste un dato no válido')
-isCorrectInfo = False
+            print ('Ingresaste unos datos  no válidos. Inténtelo nuevamente.')
